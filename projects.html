@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Jonas Jünemann</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="ProjectsStyle.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <script
+            src="https://kit.fontawesome.com/836a943e18.js"
+            crossorigin="anonymous"
+            defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body id="projects-page">
+<header>
+    <div class="container">
+        <nav>
+            <div class="nav-brand">
+                <a href="index.html">
+
+                </a>
+            </div>
+            <div class="burger-menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <div class="theme-selector has-dropdown">
+                <div class="moon"><a><i class="far fa-moon fa-2x"></i></a></div>
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a id="light" href="#">light</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a id="dark" href="#">dark</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html#landing-page">
+                        <img
+                                src="images/profile-pic.jpg"
+                                alt="Jonas Juenemann"
+                                class="profile-pic nav-link"
+                        />
+                        <span class="caption nav-link">Jonas Jünemann</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projekte</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Kontakt</a>
+                </li>
+                <li class="nav-item socials">
+                    <a href="#" target="_blank" class="nav-link left-link">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="nav-link">
+                        <i class="fa fa-xing"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section id="landing-page" class="landing-page">
+    <div class="container">
+        <div class="main-message">
+            <h3>Projekte</h3>
+            <p>Eine etwas ausführlichere Übersicht über meine durchgeführten Projekte</p>
+        </div>
+    </div>
+</section>
+<section id="projects" class="projects">
+    <div class="wrapper">
+        <div class="project-item fullpage-project">
+            <div class="project-img">
+                <img src="images/Speed.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Beschleunigung von Python-Implementationen</h2>
+                <p>
+                    Ein Projekt, über das ich auch meine Bachelorarbeit geschrieben habe, beschäftigt sich mit den
+                    Beschaffenheiten Python, inbesonders, wie eine Python Implementation ausgeführt wird und wie dies
+                    unter Umständen zu beschleunigen ist.
+                    Hierfür wurde eine implementation des bekannten Conways Game of Life vorgenommen, zunächst in
+                    Python.
+                    Anschließend wurde diese erweitert durch Implementationen mit C++, mit Python in Verbindung mit
+                    Cython und mit C++ Extensions.
+                    Im letzten Schritt wurde GPU Programmierung mit CUDA implementiert und als Vergleichsmaßstab
+                    genommen.
+                </p>
+                <div>
+                    <a href="#project-item-1" class="project-link more-info" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="https://github.com/jonasjuenemann/BAProjekt" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <br>
+                <div class="btns">
+                    <span class="tech-btn"><span class="cuda dot"></span>Cuda</span>
+                    <span class="tech-btn"><span class="c dot"></span>C++</span>
+                    <span class="tech-btn"><span class="cython dot"></span>Cython</span>
+                    <span class="tech-btn"><span class="python dot"></span>Python</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item fullpage-project">
+            <div class="project-img">
+                <img src="images/ML.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Machine Learning</h2>
+                <p>
+                    Da mich bei der Arbeit mit Daten insbesondere Machine Learning Algorithmen
+                    immer fasziniert haben, habe ich mir zumindest einen groben Überblick über verschiedenste
+                    Algorithmen verschafft.
+                    Dafür habe ich diese zumindest teilweise selbst implementiert, natürlich nicht in vergleichbarem
+                    Detail/Performance wie bspw. die sklearn- Bibliothek
+                    diese bereitstellt.
+                    Primärer Hintergrund war hier eher, diese Algorithmen möglichst einmal von Grund auf zu verstehen.
+                    Anschließend habe ich mir dann interessante Datensets gesucht, meist über
+                    <abbr title="Online-Community, die sich an Datenwissenschaftler richtet. Gehört zu Google">kaggle.com</abbr>.
+                    Für die Anwendung habe ich dann sowohl meine eigen programmierten Implementationen als auch sklearn
+                    genutzt.
+                </p>
+                <div>
+                    <a href="#project-item-2" class="project-link more-info" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="https://github.com/jonasjuenemann/MachineLearning" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <br>
+                <div class="btns">
+                    <span class="tech-btn"><span class="sklearn dot"></span>sklearn</span>
+                    <span class="tech-btn"><span class="pyplot dot"></span>matplotlib</span>
+                    <span class="tech-btn"><span class="pandas dot"></span>pandas</span>
+                    <span class="tech-btn"><span class="oop dot"></span>OOP</span>
+                    <span class="tech-btn"><span class="python dot"></span>Python</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-img">
+                <img src="images/FinanceData.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>FinanzDaten</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid at autem commodi deserunt
+                    doloribus
+                    harum illo inventore numquam obcaecati officiis perferendis placeat provident recusandae
+                    repellendus, reprehenderit
+                    saepe soluta voluptates? Aliquid architecto aut eos eum, exercitationem ipsa modi qui repellat.
+                </p>
+                <div>
+                    <a href="#project-item-4" class="project-link more-info hide" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="https://github.com/jonasjuenemann/FinancialData" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <br>
+                <div class="btns">
+                    <span class="tech-btn"><span class="pyplot dot"></span>matplotlib</span>
+                    <span class="tech-btn"><span class="pandas dot"></span>pandas</span>
+                    <span class="tech-btn"><span class="python dot"></span>Python</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-img">
+                <img src="images/backend.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Flask-Backend mit Datenbank</h2>
+                <p>
+                    <span class="wip">Work-In-Progress.</span>
+                    Eine flask-App mit SQL-Datenbank im Hintergund.
+                    Ein größeres Projekt ist zur Zeit in Arbeit, aber noch nicht für eine Live-Demo bereit.
+                    Aktuell ist dies lediglich ein kleineres Projekt.
+                    Dieses arbeitet mit User Accounts, die in der Datenbank gespeichert werden. In der Entwicklung wird hierbei SQLLite, für das Deployment
+                    dann PostgreSQL genutzt.
+                    Außerdem können Reiseziele für Gruppen von leuten vorgeschlagen werden.
+                </p>
+                <div class="project-links">
+                    <a href="#project-item-5" class="project-link more-info" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="https://mysterious-forest-78527.herokuapp.com/" class="project-link more-info" target="_blank"><i class="fas fa-laptop-code"></i> Live-Demo</a>
+                    <a href="https://github.com/jonasjuenemann/TravelPlanner" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <br>
+                <div class="btns">
+                    <span class="tech-btn"><span class="css dot"></span>CSS</span>
+                    <span class="tech-btn"><span class="html dot"></span>Html</span>
+                    <span class="tech-btn"><span class="sql dot"></span>SQL</span>
+                    <span class="tech-btn"><span class="flask dot"></span>Flask</span>
+                    <span class="tech-btn"><span class="python dot"></span>Python</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item fullpage-project">
+            <div class="project-img">
+                <img src="images/React.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Playlist-Ersteller via React</h2>
+                <p>
+                    Eine React-App, die in Verbindung mit der Nutzung der Spotify API funktioniert.
+                    Es können aus der Spotify Bibliothek Titel gesucht und in eine Playlist gespeichert werden.
+                    Diese Playlist kann wiederum automatisch in Spotify übertragen werden.
+                    Vorraussetzung für die Nutzung der App ist ein funktionierender Spotify Account. Die Anmeldung
+                    erfolgt dann über ein OAuth2 Verfahren.
+
+                </p>
+                <div>
+                    <a href="#project-item-3" class="project-link more-info" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="http://plbuilder.surge.sh/" class="project-link more-info" target="_blank"><i class="fas fa-laptop-code"></i> Live-Demo</a>
+                    <a href="#" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <div class="btns">
+                    <span class="tech-btn"><span class="css dot"></span>CSS</span>
+                    <span class="tech-btn"><span class="api dot"></span>API</span>
+                    <span class="tech-btn"><span class="react dot"></span>React</span>
+                    <span class="tech-btn"><span class="javascript dot"></span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-img">
+                <img src="images/Portfolio.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Portfolio-Website</h2>
+                <p>
+                    Ein großes Projekt bezüglich Front-End-Design mit CSS und JS/Jquery ist außerdem diese Portfolioseite selbst.
+                    Für Front-End Interessierte ist daher hier auch der Code dieser Website zu finden.
+                    Für so manche Funktionalität wurden hier CSS-Tricks angewendent, an anderen Stellen dann JS verwendet.
+                </p>
+                <div>
+                    <a href="#project-item-6" class="project-link more-info hide" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="#" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <div class="btns">
+                    <span class="tech-btn"><span class="css dot"></span>CSS</span>
+                    <span class="tech-btn"><span class="html dot"></span>Html</span>
+                    <span class="tech-btn"><span class="bootstrap dot"></span>Bootstrap</span>
+                    <span class="tech-btn"><span class="javascript dot"></span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-img">
+                <img src="images/Sightseeing.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Sightseeing-Website</h2>
+                <p>
+                    Eine etwas interessantere Varation der recht bekannten Wetter-Applikation.
+                    Die Idee war hier vor allem die Nutzung von APIs besser zu verstehen.
+                    Dabei werden die Html Elemente jeweils per Javascript aus den Ergebnissen der API-Abfrage generiert.
+                </p>
+                <div>
+                    <a href="#project-item-7" class="project-link more-info hide" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="https://frosty-cori-daf3c9.netlify.app" target="_blank" class="project-link more-info"><i class="fas fa-laptop-code"></i> Live-Demo</a>
+                    <a href="https://github.com/jonasjuenemann/Project_Sightseeing" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <div class="btns">
+                    <span class="tech-btn"><span class="css dot"></span>CSS</span>
+                    <span class="tech-btn"><span class="html dot"></span>Html</span>
+                    <span class="tech-btn"><span class="ajax dot"></span>AJAX</span>
+                    <span class="tech-btn"><span class="javascript dot"></span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="project-img">
+                <img src="images/calculator.png" alt=""/>
+            </div>
+            <div class="project-description">
+                <h2>Calculator-App</h2>
+                <p>
+                    Eines der wenigen Projekte, in denen ich tatsächlich mal außerhalb der Universität Java verwendet habe,
+                    ist die Arbeit mit AndroidStudio für Mobile (Android-) Apps.
+                    Offensichtlich bin ich hier allerdings noch Beginner, dies bspw. eine simple Taschenrechner-App.
+                    Hierbei wurde der Umgang mit Views und Intents sowie die allgemeine Arbeit mit AS/XML geübt.
+                </p>
+                <div>
+                    <a href="#project-item-8" class="project-link more-info hide" role="button"><i
+                            class="fas fa-info-circle"></i> Mehr Info</a>
+                    <a href="#" class="project-link" target="_blank"
+                    ><i class="fa fa-github" aria-hidden="true"> Zum Quellcode</i></a
+                    >
+                </div>
+                <div class="btns">
+                    <span class="tech-btn"><span class="android dot"></span>AndroidStudio</span>
+                    <span class="tech-btn"><span class="java dot"></span>Java</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <hr id="last-hr"/>
+    <div class="footer-nav">
+        <a href="projects.html" class="footer-nav-link">Home</a>
+        <a href="projects.html#projects" class="footer-nav-link">Projekte</a>
+        <a href="index.html#contact" class="footer-nav-link">Kontakt</a>
+    </div>
+    <div class="footer-coded">
+    </div>
+    <div class="footer-social socials">
+        <a href="#" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fa fa-xing"></i></a>
+    </div>
+</footer>
+<div class="project-lightbox" id="project-item-1">
+    <div class="project-lightbox__content">
+        <a href="#!" class="close"></a>
+        <div class="lightbox__text">
+            <h3 class="project__title">Beschleunigung von Python-Implementationen</h3>
+            <p> Ein Projekt, über das ich auch meine Bachelorarbeit geschrieben habe, beschäftigt sich mit den
+                Beschaffenheiten Python, besonders, wie eine Python Implementation ausgeführt wird und wie dies
+                unter Umständen zu beschleunigen ist. Primäres Testobjekt des Projektes war dabei eine
+                Implementation
+                des relativ bekannten Conways Game of Life. </p>
+
+            <img class="Gol gif" src="images/GoL.gif" alt="Conways Game of Life"/>
+            <figcaption>Visualisierung des GoL auf einem 128x128 Feld (via matplotlibs FuncAnimation).</figcaption>
+
+
+            <p>Hierbei war der Fokus nicht die algorithmische Geschwindigkeit im Sinne der O() Notation, sondern
+                das Ausführen mittels anderer Python Implementationen
+                als der standardmäßig verwendeten CPython Implementation.
+                Hierbei spielt zum einen die Auslagerung von Teilen des Codes nach C mittels Cython eine Rolle.
+                Außerdem die Auslagerung nach C++ und dem entsprechenden g++ Compiler auf klassische Art und Weise
+                mit pybinds11.</p>
+
+            <p>Als zweiten Schritt wurde dann numba als Möglichkeit der "Auslagerung" in eine andere Ausführungsart
+                innerhalb von Python betrachtet.
+                Hierbei wird spezifisch der Python Interpreter umgangen, indem Just-In-Time mit der LLVM Architektur
+                kompiliert wird.
+                Betrachtet wurde hier neben der Geschwindigkeit auch Kompatibilität als wichtiger Faktor.</p>
+
+            <p>Als letztes wurde dann die Auslagerung der Code Ausführung auf die GPU betrachtet. Dies stellt für
+                Python eine wirklich hervorragende Möglichkeit
+                dar. So wird spezifisch herausgestellt, wie (verhältnismäßig) leicht sich aus Python auf der GPU
+                programmieren lässt.
+                Gleichzeitig wird auch betrachtet, dass die Installation und das Setup, gerade unter Windows, einen
+                durchaus beträchtlichen Aufwand darstellen kann.
+                Nachdem diese aber einmal durchgeführt wurde, in Fall des Projektes mit Nvidias CUDA, gibt es für
+                Python Bibliotheken, die die Arbeit aus Python heraus
+                enorm komfortabel gestalten.
+                Spezifisch wurde im Rahmen des Projektes herausgestellt, wie viel schneller eine GPU Ausführung ist,
+                auch im Vergleich mit einer C++ Ausführung.</p>
+        </div>
+    </div>
+</div>
+<div class="project-lightbox" id="project-item-2">
+    <div class="project-lightbox__content">
+        <a href="#!" class="close"></a>
+        <div class="lightbox__text">
+            <h3 class="project__title">Machine Learning Project</h3>
+            <p> Da mich bei der Arbeit mit Daten insbesondere Machine Learning Algorithmen
+                immer fasziniert haben, habe ich mir zumindest einen groben Überblick über verschiedenste
+                Algorithmen verschafft.
+                Dafür habe ich diese zumindest teilweise selbst implementiert, natürlich nicht in vergleichbarem
+                Detail/Performance wie bspw. die sklearn- Bibliothek
+                diese bereitstellt.
+                Primärer Hintergrund war hier auch keine Neuerfindung der Algorithmen, sondern diese möglichst
+                einmal von Grund auf nachzubauen um diese vollständig zu verstehen.
+            </p>
+            <p>
+                Anschließend habe ich mir dann interessante Datensets gesucht, meist über
+                <abbr title="Online-Community, die sich an Datenwissenschaftler richtet. Gehört zu Google">kaggle.com</abbr>,
+                um zu sehen, inweiweit sich
+                ML-ALgorithmen nutzen lassen um aus diesen Daten aufschlussreiche Erkenntnisse ziehen zu können.
+                Für die Anwendung habe ich dann sowohl meine eigen programmierten Implementationen als auch sklearn
+                genutzt.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="project-lightbox" id="project-item-3">
+    <div class="project-lightbox__content">
+        <a href="#!" class="close"></a>
+        <div class="lightbox__text">
+            <h3 class="project__title">Spotify-Applikation mit React</h3>
+            <p>
+                In dem Bestreben, React weiter zu erkunden und zu lernen, habe ich ein Projekt entwickelt, dass
+                React für eine Webapplikation benutzt, aus der aus auf die Spotify API zugegriffen werden kann.
+                Die grundlegende Funktionalität der App ist dabei recht simpel, so ermöglicht diese das
+                Zusammenstellen
+                einer Playlist.
+                Hierfür kann zunächst ein gewünschter Titel gesucht werden.
+                Anschließend werden für diesen Titel entsprechende Spotify Ergebnisse vorgestellt.
+                Titel aus den Ergebnis können dann wiederum zu einer Playlist hinzugefügt werden. Diese kann
+                umbenannt
+                werden und ist anschließend verfügbar.
+            </p>
+            <p>
+                Vorraussetzung für die Nutzung der App ist ein funktionierender Spotify Account. Die Anmeldung
+                erfolgt
+                über ein OAuth2 Verfahren, bei dem man sich bei Spotify selbst anmelden muss.
+                (Geschieht automatisch beim ersten Suchdurchlauf nach einem Titel).
+                Das OAuth2 Verfahren erlaubt dabei eine vollständig Front-End basierte Nutzung der API ohne die
+                Gefahr,
+                API Keys zu gefährden.
+                Erstellte Playlists stehen anschließend unter dem Account zur Verfügung.
+            </p>
+            <p>
+                Die App ist ansonsten Work-in-Progress. Weitere Funktionalitäten, sowie eine etwas verbesserte
+                User-Experience beim Anmeldeprozess
+                sind aktuell in Arbeit.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="project-lightbox" id="project-item-4">
+    <div class="project-lightbox__content">
+        <a href="#!" class="close"></a>
+        <div class="lightbox__text">
+            <h3 class="project__title">FinanzDaten</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor et exercitationem magnam,
+                odit recusandae sint totam! Aliquam amet atque cum enim excepturi, exercitationem ipsa itaque iusto magnam
+                molestiae nemo nesciunt nisi nobis obcaecati optio quam repellat saepe totam, vel velit. Accusantium ad alias
+                animi aperiam aspernatur atque blanditiis cum dicta dignissimos dolor dolorem, doloribus, ea excepturi exercitationem
+                fuga impedit ipsam labore laboriosam maiores molestiae non omnis placeat quaerat similique soluta totam ut vel? Aut commodi
+                culpa dignissimos esse et facere illo impedit, mollitia nemo praesentium provident quis quisquam, quod recusandae sunt tenetur unde,
+                voluptas. Fugit illo impedit nisi sunt.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi fugiat hic iure
+                placeat possimus praesentium quidem saepe, similique velit voluptate!
+            </p>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+</body>
+</html>
