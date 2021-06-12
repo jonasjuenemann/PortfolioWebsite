@@ -262,6 +262,12 @@
                     Dafür habe ich diese zumindest teilweise selbst implementiert, natürlich nicht in vergleichbarem
                     Detail/Performance wie bspw. die sklearn- Bibliothek
                     diese bereitstellt.
+                    Anschließend habe ich mir dann interessante Datensets gesucht, meist über
+                    <abbr title="Online-Community, die sich an Datenwissenschaftler richtet. Gehört zu Google">kaggle.com</abbr>,
+                    um zu sehen, inwieweit sich
+                    ML-ALgorithmen nutzen lassen um aus diesen Daten aufschlussreiche Erkenntnisse ziehen zu können.
+                    Für die Anwendung habe ich dann sowohl meine eigen programmierten Implementationen als auch sklearn
+                    genutzt.
                 </p>
                 <a href="#project-item-2" class="project-link more-info" role="button"><i
                         class="fas fa-info-circle"></i> Mehr Info</a>
@@ -302,7 +308,7 @@
             Der verlässlichste Weg mich zu erreichen, ist mir per Mail zu schreiben.
             Hierfür kann gerne unten stehendes Kontaktformular genutzt werden.
             Ansonsten steht darunter auch meine Mail Addresse, die gern genutzt werden kann.
-            In jedem Fall freue ich mich über ihre Nachricht.
+            In jedem Fall freue ich mich auf ihre Nachricht.
             <br>
             <br>
             <i><strong>Jonas</strong></i>
@@ -328,7 +334,8 @@
                           maxlength="10000" rows="20"></textarea>
             </div>
             <div class="form-group">
-                <button data-tooltip="Ihre Nachricht wird mithilfe von formsubmit.co per Mail an mich geschickt. Sie werden aufgefordert, ein Captcha auszufüllen. Dies dient der Vermeidung von Spam, ich hoffe da auf Verständnis."
+                <button data-tooltip="Ihre Nachricht wird mithilfe von formsubmit.co per Mail an mich geschickt. Sie werden aufgefordert, ein Captcha auszufüllen. Dies dient der Vermeidung von Spam, ich hoffe auf ihr
+                 Verständnis."
                         type="submit" class="btn btn-lg btn-default pull-right tooltip">Senden →
                 </button>
             </div>
@@ -422,12 +429,43 @@
                     einmal von Grund auf nachzubauen um diese vollständig zu verstehen.
                 </p>
                 <p>
-                    Anschließend habe ich mir dann interessante Datensets gesucht, meist über
-                    <abbr title="Online-Community, die sich an Datenwissenschaftler richtet. Gehört zu Google">kaggle.com</abbr>,
-                    um zu sehen, inweiweit sich
-                    ML-ALgorithmen nutzen lassen um aus diesen Daten aufschlussreiche Erkenntnisse ziehen zu können.
-                    Für die Anwendung habe ich dann sowohl meine eigen programmierten Implementationen als auch sklearn
-                    genutzt.
+                    Implementiert und betrachtet habe ich mir dabei zunächst die sog. überwachten, stetigen ML-Algorithmen.
+                    Diese waren tendenziell auch noch aus der Uni bekannt, und umfassen primär eig. nur die Lineare Regession sowie die Multiple Lineare Regression.
+                    Anschließend wurden die zunächst die "simpleren" Klassifizierungs-Algorithmen wie die logistische Regression und
+                    der K-Nearest Neighbor Algorithmus betrachtet.
+                    Später dann auch die etwas forgschritteneren Algorithmen wie die Support Vektor Machines, Entscheidungsbäume und zu guter Letzt
+                    der Naive Bayes Klaissifzierer, der vor allem für die Einschätzung von Textnachrichten ganz im Sinne des Natural Language Processing
+                    eine Rolle spielt.
+                </p>
+                <p>
+                    Im letzten Schritt habe ich dann die Rolle von nicht überwachten ML-Algorithmen betrachtet, primär das Clustering mittels dem K-Means Algorithmus,
+                    hierfür habe ich dann bspw. einen (simplen) Handschriftserkenner mit sklearn gebaut.
+                </p>
+                <div class="hide" id="handwriting">
+                    <p>
+                        Probieren Sie diesen doch gerne einmal aus! Die Idee ist relativ simpel, Sie können in die unten stehenden Kästchen jeweils eine Zahl schreiben.
+                        Dann können Sie den Button "Überprüfen" klicken.
+                    </p>
+                    <p>
+                        An dieser Stelle werden dann ihre handschriftlichen Zahlen per JavaScript in eine 2D Matrix umgewandelt,
+                        die ein Programm verstehen kann. Anschließend wird dieses Array an eine von mir erstellte flask-API geschickt.
+                        In dieser wird dann mit K-Means-Algorithmus aus ihrer Handschrift mit sklearn und anhand eines Traningsdatensets (hoffentlich) korrekt ihre vierstellige
+                        Zahl ermittelt, und zurückgesendet.
+                        Meistens sind allerdings lediglich 2-3 der Zahlen korrekt erkannt, insbesonders mit der 3, 8 und 9 hat der Algorithmus zugegebenerweise etwas zu kämpfen,
+                        diese korrekt zu identifizieren.
+                    </p>
+                </div>
+                <p>
+                    Geendet hat dieses Projekt für mich mit einem kurzen Einblick in die Neuronalen Netzen, also den Anfängen des Deep-Learning.
+                    Dies ist offensichtlich ebenfalls ein hoch interessantes, aber nicht direkt triviales Thema, daher hat mir an dieser
+                    auch ein kurzer Einstieg gereicht, da ich mich in diesem Projekt eigentlich mit ML-Algorithmen und der sklearn Bibliothek beschäftigen wollte.
+                    Deep Learning und u.U. Natural Language Processing sind aber sicherlich Themen die ich in einem nächsten gesonderten Projekt angehe.
+                </p>
+                <p>
+                    Für meine eigenen Projekte für den jeweiligen Algorithmus habe ich mir dann üblicherweise interessante Datenset gesucht,
+                    eine große Hilfe war dabei <abbr title="Online-Community, die sich an Datenwissenschaftler richtet. Gehört zu Google">kaggle.com</abbr>,
+                    dass eine ganze Reihe an hoch interessanten Datensets für die Arbeit mit ML-Algorithmen bereitstellt, sowie auch eine menge möglicherweise hilfreicher
+                    Ressourcen in dem Bereich.
                 </p>
             </div>
         </div>
