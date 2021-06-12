@@ -229,8 +229,8 @@
                 <h2>Beschleunigung von Python-Implementationen</h2>
                 <p>
                     Ein Projekt, über das ich auch meine Bachelorarbeit geschrieben habe, beschäftigt sich mit den
-                    Beschaffenheiten Python, inbesonders, wie eine Python Implementation ausgeführt wird und wie dies
-                    unter Umständen zu beschleunigen ist.
+                    Beschaffenheiten Python, besonders, wie eine Python Implementation ausgeführt wird und wie dies
+                    unter Umständen zu beschleunigen wäre.
                     Hierfür wurde eine implementation des bekannten Conways Game of Life vorgenommen, zunächst in
                     Python.
                     Anschließend wurde diese erweitert durch Implementationen mit C++, mit Python in Verbindung mit
@@ -256,12 +256,12 @@
             <div class="project-description">
                 <h2>Machine-Learning Projekt</h2>
                 <p>
-                    Da mich bei der Arbeit mit Daten insbesondere Machine Learning Algorithmen
-                    immer fasziniert haben, habe ich mir zumindest einen groben Überblick über verschiedenste
+                    Da mich bei der Arbeit mit Daten besonders Machine Learning Algorithmen
+                    faszinieren, habe ich mir in diesem Projekt zumindest einen groben Überblick über verschiedene
                     Algorithmen verschafft.
-                    Dafür habe ich diese zumindest teilweise selbst implementiert, natürlich nicht in vergleichbarem
-                    Detail/Performance wie bspw. die sklearn- Bibliothek
-                    diese bereitstellt.
+                    Dafür habe ich diese teilweise selbst implementiert, wenn auch nicht unbedingt in vergleichbarem
+                    Detail bzw. Performance wie bspw. die sklearn- Bibliothek
+                    diese für Python bietet.
                     Anschließend habe ich mir dann interessante Datensets gesucht, meist über
                     <abbr title="Online-Community, die sich an Datenwissenschaftler richtet. Gehört zu Google">kaggle.com</abbr>,
                     um zu sehen, inwieweit sich
@@ -378,37 +378,33 @@
             <div class="lightbox__text">
                 <h3 class="project__title">Beschleunigung von Python-Implementationen</h3>
                 <p> Ein Projekt, über das ich auch meine Bachelorarbeit geschrieben habe, beschäftigt sich mit den
-                    Beschaffenheiten Python, besonders, wie eine Python Implementation ausgeführt wird und wie dies
-                    unter Umständen zu beschleunigen ist. Primäres Testobjekt des Projektes war dabei eine
-                    Implementation
-                    des relativ bekannten Conways Game of Life. </p>
+                    Beschaffenheiten Pythons, im speziellen damit, wie eine Python Implementation ausgeführt wird und wie dieser Prozess
+                    unter Umständen zu beschleunigen wäre. Primäres Testobjekt war dabei eine
+                    Implementation des relativ bekannten Game of Life von J.H. Conway. </p>
 
                 <img class="Gol gif" src="images/GoL.gif" alt="Conways Game of Life"/>
                 <figcaption>Visualisierung des GoL auf einem 128x128 Feld (via matplotlibs FuncAnimation).</figcaption>
 
 
-                <p>Hierbei war der Fokus nicht die algorithmische Geschwindigkeit im Sinne der O() Notation, sondern
-                    das Ausführen mittels anderer Python Implementationen
-                    als der standardmäßig verwendeten CPython Implementation.
-                    Hierbei spielt zum einen die Auslagerung von Teilen des Codes nach C mittels Cython eine Rolle.
-                    Außerdem die Auslagerung nach C++ und dem entsprechenden g++ Compiler auf klassische Art und Weise
-                    mit pybinds11.</p>
+                <p>Der Fokus des Projekts lag dabei nicht auf der algorithmischen Laufzeit im Sinne der O() Notation, sondern
+                    auf der Ausführung mittels bspw. anderer Möglichkeiten als der standardmäßig verwendeten CPython Implementation.
+                    Hierbei war zum einen die Auslagerung von Teilen des Codes nach C mittels Cython eine relevante Option.
+                    Zum Anderen die Auslagerung nach C++ und dem entsprechenden g++ Compiler mit bspw. pybinds11.</p>
 
-                <p>Als zweiten Schritt wurde dann numba als Möglichkeit der "Auslagerung" in eine andere Ausführungsart
+                <p>Als zweiten Schritt des Projektes wurde dann numba als Möglichkeit der "Auslagerung" in eine andere Ausführungsart
                     innerhalb von Python betrachtet.
                     Hierbei wird spezifisch der Python Interpreter umgangen, indem Just-In-Time mit der LLVM Architektur
-                    kompiliert wird.
-                    Betrachtet wurde hier neben der Geschwindigkeit auch Kompatibilität als wichtiger Faktor.</p>
+                    kompiliert wird, was tendenziell wesentliche Geschwindigkeits-Vorteile birgt.
+                    Betrachtet wurde hier neben der Geschwindigkeit auch Kompatibilität innerhalb von Python als wichtiger Faktor.</p>
 
-                <p>Als letztes wurde dann die Auslagerung der Code Ausführung auf die GPU betrachtet. Dies stellt für
+                <p>Als letztes wurde dann eine Auslagerung der Code Ausführung von der CPU auf die GPU betrachtet. Dies stellt für
                     Python eine wirklich hervorragende Möglichkeit
-                    dar. So wird spezifisch herausgestellt, wie (verhältnismäßig) leicht sich aus Python auf der GPU
-                    programmieren lässt.
-                    Gleichzeitig wird auch betrachtet, dass die Installation und das Setup, gerade unter Windows, einen
+                    dar, da dies bei einer parallelen Ausführung auf den tausenden Kernen einer GPU den Prozess enorm beschleunigt.
+                    So wurde spezifisch für Python herausgestellt, wie (verhältnismäßig) leicht sich aus Python heraus auf der GPU
+                    arbeiten lässt.
+                    Gleichzeitig wurde zumindest angemerkt, dass die Installation und das Setup, gerade auf einer Windows-Maschine, einen
                     durchaus beträchtlichen Aufwand darstellen kann.
-                    Nachdem diese aber einmal durchgeführt wurde, in Fall des Projektes mit Nvidias CUDA, gibt es für
-                    Python Bibliotheken, die die Arbeit aus Python heraus
-                    enorm komfortabel gestalten.
+                    Im Rahmen des Projektes wurde die GPU_Programmierung dabei Nvidia's CUDA Framework verwendet.
                     Spezifisch wurde im Rahmen des Projektes herausgestellt, wie viel schneller eine GPU Ausführung ist,
                     auch im Vergleich mit einer C++ Ausführung.</p>
             </div>
@@ -419,26 +415,27 @@
             <a href="#!" class="close"></a>
             <div class="lightbox__text">
                 <h3 class="project__title">Machine Learning Project</h3>
-                <p> Da mich bei der Arbeit mit Daten insbesondere Machine Learning Algorithmen
-                    immer fasziniert haben, habe ich mir zumindest einen groben Überblick über verschiedenste
+                <p> Da mich bei der Arbeit mit Daten besonders Machine Learning Algorithmen
+                    faszinieren, habe ich mir in diesem Projekt zumindest einen groben Überblick über verschiedene
                     Algorithmen verschafft.
-                    Dafür habe ich diese zumindest teilweise selbst implementiert, natürlich nicht in vergleichbarem
-                    Detail/Performance wie bspw. die sklearn- Bibliothek
-                    diese bereitstellt.
-                    Primärer Hintergrund war hier auch keine Neuerfindung der Algorithmen, sondern diese möglichst
+                    Dafür habe ich diese teilweise selbst implementiert, wenn auch nicht unbedingt in vergleichbarem
+                    Detail bzw. Performance wie bspw. die sklearn- Bibliothek
+                    diese für Python bietet.
+                    Diese habe ich daher auch an verschiedenen Stellen genutzt.
+                    Primärer Hintergrund war hier auch nicht die Neuentwicklung der Algorithmen, sondern diese möglichst
                     einmal von Grund auf nachzubauen um diese vollständig zu verstehen.
                 </p>
                 <p>
                     Implementiert und betrachtet habe ich mir dabei zunächst die sog. überwachten, stetigen ML-Algorithmen.
-                    Diese waren tendenziell auch noch aus der Uni bekannt, und umfassen primär eig. nur die Lineare Regession sowie die Multiple Lineare Regression.
-                    Anschließend wurden die zunächst die "simpleren" Klassifizierungs-Algorithmen wie die logistische Regression und
+                    Diese waren mir noch aacus der Uni bekannt, und umfassen primär die Lineare Regession sowie die Multiple Lineare Regression.
+                    Anschließend wurden dann zunächst die "simpleren" Klassifizierungs-Algorithmen wie die logistische Regression und
                     der K-Nearest Neighbor Algorithmus betrachtet.
-                    Später dann auch die etwas forgschritteneren Algorithmen wie die Support Vektor Machines, Entscheidungsbäume und zu guter Letzt
-                    der Naive Bayes Klaissifzierer, der vor allem für die Einschätzung von Textnachrichten ganz im Sinne des Natural Language Processing
-                    eine Rolle spielt.
+                    Später warem dann auch die etwas forgschritteneren Algorithmen wie die Support Vektor Machines, Entscheidungsbäume und
+                    der Naive Bayes Klassifzierer, der vor allem für die Einschätzung von Textnachrichten im Sinne des Natural Language Processing
+                    eine wichtige Rolle besitzt, im Fokus.
                 </p>
                 <p>
-                    Im letzten Schritt habe ich dann die Rolle von nicht überwachten ML-Algorithmen betrachtet, primär das Clustering mittels dem K-Means Algorithmus,
+                    Im letzten Schritt habe ich dann nicht überwachte ML-Algorithmen betrachtet, primär das Clustering mittels dem K-Means Algorithmus,
                     hierfür habe ich dann bspw. einen (simplen) Handschriftserkenner mit sklearn gebaut.
                 </p>
                 <div class="hide" id="handwriting">
@@ -459,13 +456,13 @@
                     Geendet hat dieses Projekt für mich mit einem kurzen Einblick in die Neuronalen Netzen, also den Anfängen des Deep-Learning.
                     Dies ist offensichtlich ebenfalls ein hoch interessantes, aber nicht direkt triviales Thema, daher hat mir an dieser
                     auch ein kurzer Einstieg gereicht, da ich mich in diesem Projekt eigentlich mit ML-Algorithmen und der sklearn Bibliothek beschäftigen wollte.
-                    Deep Learning und u.U. Natural Language Processing sind aber sicherlich Themen die ich in einem nächsten gesonderten Projekt angehe.
+                    Deep Learning und u.U. Natural Language Processing sind aber Themen, die ich in einem nächsten Projekt angehe.
                 </p>
                 <p>
-                    Für meine eigenen Projekte für den jeweiligen Algorithmus habe ich mir dann üblicherweise interessante Datenset gesucht,
+                    Für meine eigenen Projekte für den jeweiligen Algorithmus habe ich mir üblicherweise interessante Datenset gesucht,
                     eine große Hilfe war dabei <abbr title="Online-Community, die sich an Datenwissenschaftler richtet. Gehört zu Google">kaggle.com</abbr>,
-                    dass eine ganze Reihe an hoch interessanten Datensets für die Arbeit mit ML-Algorithmen bereitstellt, sowie auch eine menge möglicherweise hilfreicher
-                    Ressourcen in dem Bereich.
+                    dass eine ganze Reihe an hoch interessanten Datensets für die Arbeit mit ML-Algorithmen bereitstellt, sowie auch eine Menge möglicherweise hilfreicher
+                    Ressourcen in diesem Bereich.
                 </p>
             </div>
         </div>
@@ -485,20 +482,19 @@
                     Anschließend werden für diesen Titel entsprechende Spotify Ergebnisse vorgestellt.
                     Titel aus den Ergebnis können dann wiederum zu einer Playlist hinzugefügt werden. Diese kann
                     umbenannt
-                    werden und ist anschließend verfügbar.
+                    werden und ist anschließend für den Spotify-Account verfügbar.
                 </p>
                 <p>
-                    Vorraussetzung für die Nutzung der App ist ein funktionierender Spotify Account. Die Anmeldung
-                    erfolgt
+                    Vorraussetzung für die Nutzung der App ist also ein funktionierender Spotify Account. Die Anmeldung
+                    erfolgt dann
                     über ein OAuth2 Verfahren, bei dem man sich bei Spotify selbst anmelden muss.
                     (Geschieht automatisch beim ersten Suchdurchlauf nach einem Titel).
-                    Das OAuth2 Verfahren erlaubt dabei eine vollständig Front-End basierte Nutzung der API ohne die
+                    Das OAuth2 Verfahren erlaubt dadurch dabei eine vollständig Front-End basierte Nutzung der API ohne die
                     Gefahr,
                     API Keys zu gefährden.
-                    Erstellte Playlists stehen anschließend unter dem Account zur Verfügung.
                 </p>
                 <p>
-                    Die App ist ansonsten Work-in-Progress. Weitere Funktionalitäten, sowie eine etwas verbesserte
+                    Die App ist ansonsten auch noch Work-in-Progress. Weitere Funktionalitäten, sowie eine etwas verbesserte
                     User-Experience beim Anmeldeprozess
                     sind aktuell in Arbeit.
                 </p>
